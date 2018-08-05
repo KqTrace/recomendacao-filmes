@@ -316,8 +316,8 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background: #19B5FE;
-		color: #FFF;
+		background: #19B5FE; /*Cor do Background do Botão*/
+		color: #FFF; /*Cor do Background da Letra*/
 		border-radius: 4px;
 		border: 0;
 		cursor: pointer;
@@ -336,8 +336,8 @@
 		input[type="button"].active,
 		button.active,
 		.button.active {
-			color: #FFF;
-			background: #22313F;
+			color: #FFF; /*Cor do Background da Letra do Botão Ativo (ou selecionado)*/
+			background: #22313F; /*Cor do Background do Botão Ativo*/
 		}
 
 			input[type="submit"].active:hover,
@@ -345,8 +345,8 @@
 			input[type="button"].active:hover,
 			button.active:hover,
 			.button.active:hover {
-				color: #FFF;
-				background: #22313F;
+				color: #FFF; /*Apenas do botão ativo e quando passa o mouse*/
+				background: #22313F; /*Apenas do botão ativo e quando passa o mouse*/
 			}
 
 		input[type="submit"]:hover,
@@ -354,15 +354,15 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #FFF;
-			background: #019be3;
+			color: #FFF; /*Cor do Background da Letra do Botão quando passa o mouse*/
+			background: #019be3; /*Cor do Background do Botão quando passa o mouse*/
 		}
 
 		input[type="submit"].alt,
 		input[type="reset"].alt,
 		input[type="button"].alt,
 		button.alt,
-		.button.alt {
+		.button.alt { /*Botão alterado, ex:; Botão da página principal*/
 			background: none;
 			box-shadow: 0 0 0 2px rgba(144, 144, 144, 0.25);
 		}
@@ -371,7 +371,7 @@
 			input[type="reset"].alt:hover,
 			input[type="button"].alt:hover,
 			button.alt:hover,
-			.button.alt:hover {
+			.button.alt:hover { /*Botão alterado, muda a cor quando passa o mouse*/
 				background: rgba(144, 144, 144, 0.075);
 				box-shadow: 0 0 0 2px rgba(144, 144, 144, 0.25);
 			}
@@ -886,7 +886,7 @@
 
 /* Icon */
 
-	.icon {
+	.icon { /*Ícones, ex: casinha, etc*/;
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
@@ -1394,10 +1394,10 @@
 /* Menu */
 
 	#nav {
-		background: #0d1217;
+		background: #0d1217; /*Cor do Background do Menu*/
 		z-index: 10002;
 		position: relative;
-		width: 4em;
+		width: 4em; /*Largura do Menu*/
 	}
 
 		#nav ul {
@@ -1416,18 +1416,18 @@
 				margin-bottom: 1em;
 			}
 
-				#nav ul li a {
+				#nav ul li a { /*Cor dos Icons no Menu em link*/
 					color: rgba(255, 255, 255, 0.5);
 					text-decoration: none;
 					font-size: 1.5em;
 				}
 
-					#nav ul li a:hover {
+					#nav ul li a:hover { /*Cor dos Icons no Menu em link quando passa o mouse*/
 						color: white;
 					}
 
 					#nav ul li a.active {
-						color: #19B5FE;
+						color: #19B5FE; /*Cor dos Icons no Menu, que estão ativos, ou selecionados*/
 					}
 
 				@media screen and (max-width: 736px) {
@@ -1466,10 +1466,10 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		min-height: 75vh;
-		height: 75vh;
+		height: 75vh; /*Altura do Id Banner*/
 		position: relative;
 		background: #000;
-		background-image: url(../../images/banner.jpg);
+		background-image: url(../../images/poly_floating_banner.jpg);
 		background-size: cover;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
